@@ -1,4 +1,7 @@
-const findTheOldest = function() {
+const findTheOldest = function(arr) {
+    arr.sort((a, b) => (a.yearOfDeath - a.yearOfBirth - b.yearOfDeath + b.yearOfBirth));
+    console.log(arr.at(-1));
+    return arr.at(-1)
 
 };
 
